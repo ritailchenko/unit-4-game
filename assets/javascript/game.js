@@ -18,13 +18,13 @@ $(".crystal-image").on("click", function(){
 
    if (counter === randNum) {
        wins ++;
-       $("#exclamation").show();
+       $("#exclamationwin").show();
        counter = 0;
    
    } else if (counter > randNum) {
     loses ++;
     counter = 0;
-    $("#exclamation").hide();
+    $("#exclamationwin").hide();
     randNum = Math.floor(Math.random() * (120 - 19) +19);
     $("#random-number").html(randNum);
 
